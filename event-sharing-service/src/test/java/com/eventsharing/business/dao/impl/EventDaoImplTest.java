@@ -20,6 +20,7 @@ public class EventDaoImplTest {
 	public static JavaArchive createDeployment() {
 		JavaArchive jar = ShrinkWrap.create(JavaArchive.class)
 				.addClasses(Event.class, EventFilter.class, EventDao.class, EventDaoImpl.class)
+				.addAsResource("META-INF/persistence.xml")
 				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 		System.out.println(jar.toString(true));
 		return jar;

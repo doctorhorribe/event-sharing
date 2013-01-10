@@ -140,8 +140,6 @@
                     <scope>test</scope>
                 </dependency>
             </dependencies>
-            <!-- This optional build configuration downloads and extracts JBoss AS automatically -->
-            <!-- Remove it if you want to use an existing installation defined by the JBOSS_HOME environment variable -->
         </profile>
     </profiles>
 </project>
