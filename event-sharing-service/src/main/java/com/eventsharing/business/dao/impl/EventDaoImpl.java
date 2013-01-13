@@ -2,6 +2,9 @@ package com.eventsharing.business.dao.impl;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceContextType;
@@ -11,6 +14,7 @@ import com.eventsharing.business.dao.EventDao;
 import com.eventsharing.business.filter.EventFilter;
 import com.eventsharing.entity.Event;
 
+@Stateless
 public class EventDaoImpl implements EventDao {
 
 	
@@ -29,11 +33,14 @@ public class EventDaoImpl implements EventDao {
 		
 		String name = eventFilter.getEventName();
 		if (name != null) {
-			query += " and e.name = :name";
+			query += " and e.name like :name";
 		}
 		
 		TypedQuery typedQuery = this.em.createQuery(query, Event.class);
-		typedQuery.setParameter("name", eventFilter.getEventName());
+		
+		if (name != null) {
+			typedQuery.setParameter("name", "%" + eventFilter.getEventName() + "%");
+		}
 		return typedQuery.getResultList();
 	}
 

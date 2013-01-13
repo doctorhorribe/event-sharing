@@ -2,9 +2,12 @@ package com.eventsharing.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity @Table(name="event")
@@ -18,10 +21,11 @@ public class Event {
 	@Column(name="NAME")
 	private String name;
 	
-	@Column(name="Location")
-	private String location;
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name="LOCATION_ID")
+	private EventLocation eventLocation;
 	
-	@Column(name="datetime")
+	@Column(name="DATETIME")
 	private String dateTime;
 
 	public Integer getEventID() {
@@ -40,12 +44,12 @@ public class Event {
 		this.name = name;
 	}
 
-	public String getLocation() {
-		return location;
+	public EventLocation getEventLocation() {
+		return eventLocation;
 	}
 
-	public void setLocation(String location) {
-		this.location = location;
+	public void setLocation(EventLocation eventLocation) {
+		this.eventLocation = eventLocation;
 	}
 
 	public String getDateTime() {
