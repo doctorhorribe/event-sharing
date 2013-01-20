@@ -1,0 +1,618 @@
+
+body {
+    background: url("images/bg-body.gif") repeat scroll 0 0 transparent;
+    margin: 0;
+}
+.page {
+    background: url("images/bg-header.jpg") no-repeat scroll center top transparent;
+}
+@font-face {
+    font-family: "RokkittRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/rokkitt-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/rokkitt-regular-webfont.woff") format("woff"), url("fonts/rokkitt-regular-webfont.ttf") format("truetype"), url("fonts/rokkitt-regular-webfont.svg#RokkittRegular") format("svg");
+}
+h1, h2, h1 a, h2 a {
+  color: #305872;
+  font-family: 'RokkittRegular';
+  font-weight: bold;
+  margin: 0;
+  font-size: 150%;
+  text-shadow: 0 1px 0 #D4EFFF;
+}
+
+h2, h2 a {
+  font-size: 130%;
+}
+h1 a {
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+.header {
+    background: url("images/bg-header.gif") repeat-x scroll 0 0 transparent;
+    height: 68px;
+    padding: 30px 0 0;
+}
+.header div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 940px;
+}
+.header div a#logo {
+    display: block;
+    float: left;
+    outline: medium none;
+}
+.header div a#logo img {
+    border: 0 none;
+}
+.header div ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    padding: 13px 0 0;
+}
+.header div ul li {
+    float: left;
+    margin: 0 0 0 20px;
+}
+.header div ul li a:hover {
+    color: #3B7193;
+}
+.header div ul li.selected a {
+    color: #3B7193;
+    font-weight: bold;
+}
+.header div ul li:first-child a {
+    background: none repeat scroll 0 0 transparent;
+}
+.header div ul li a {
+    background: url("images/interface.gif") no-repeat scroll left 0 transparent;
+    color: #6CB2E6;
+    font-family: 'RokkittRegular';
+    font-size: 16px;
+    outline: medium none;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #D1E6F7;
+}
+.body {
+    background: url("images/bg-content.gif") repeat-x scroll 0 0 #90C5E7;
+}
+.body div:first-child {
+    background: url("images/top-border.gif") repeat-x scroll left bottom transparent;
+    padding-bottom: 2px;
+}
+.body div div#featured {
+    background: url("images/flowerwheel.jpg") no-repeat scroll center top transparent !important;
+    height: 507px;
+    margin: 0 auto;
+    padding: 0 10px !important;
+    width: 940px;
+}
+.body div div#featured h3 {
+    background: url("images/interface.png") no-repeat scroll left -107px transparent;
+    color: #FFFFFF;
+    font-family: 'RokkittRegular';
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 75px 0 20px 29px;
+    padding: 10px 0 30px;
+    text-align: center;
+    text-shadow: 0 10px 3px #9EC7E5;
+    width: 360px;
+}
+.body div div#featured p {
+    color: #31607E;
+    font-family: arial;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 0 0 29px;
+    text-align: justify;
+    text-shadow: 0 1px 0 #D6F0FF;
+    width: 360px;
+}
+.body div div#featured a {
+    background: url("images/interface.png") no-repeat scroll 0 20px transparent;
+    border: 0 none;
+    color: #32617F;
+    display: block;
+    font-family: 'RokkittRegular';
+    font-size: 20px;
+    font-weight: bold;
+    height: 102px;
+    line-height: 95px;
+    margin: 0;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #DBEBFA;
+    width: 392px;
+}
+.body div {
+    background: url("images/bg-content2.gif") repeat scroll 0 0 transparent;
+}
+.body div ul.blog {
+    background: url("images/separator.jpg") no-repeat scroll center top transparent;
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px 50px;
+    width: 940px;
+}
+.body div ul.blog li:first-child {
+    margin: 0;
+}
+.body div ul.blog li {
+    float: left;
+    height: auto;
+    margin: 0 0 0 83px;
+    padding: 0;
+    text-align: center;
+    width: 258px;
+}
+.body div ul.blog li a img:hover {
+    opacity: 0.8;
+}
+.body div ul.blog li p {
+    background: none repeat scroll 0 0 transparent;
+    color: #828081;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 17px 0 0;
+    padding: 0;
+    text-align: justify;
+    width: 258px;
+}
+.body div ul.blog li a:first-child {
+    background: none repeat scroll 0 0 transparent;
+    height: auto;
+    line-height: 0;
+    margin: 25px 0 0;
+    padding: 0;
+    width: auto;
+}
+.body div ul.blog li a:hover {
+    color: #6CB2E6;
+}
+.body div ul.blog li a {
+    background: url("images/bg-readmore.gif") no-repeat scroll center top transparent;
+    color: #33627E;
+    display: block;
+    font-family: 'RokkittRegular';
+    font-size: 22px;
+    font-weight: bold;
+    height: 74px;
+    line-height: 70px;
+    margin: 15px auto;
+    outline: medium none;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #D9EDF8;
+    width: 218px;
+}
+.body div ul.blog li a img {
+    border: 0 none;
+}
+.body div ul.blog li a img:hover {
+    opacity: 99999;
+}
+.body div h3 {
+    color: #7E7E7E;
+    font-family: 'RokkittRegular';
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 21px;
+    margin: 15px 0 0;
+}
+.body div p {
+    color: #636363;
+    font-family: 'RokkittRegular';
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 0 20px;
+    text-align: justify;
+}
+.body div p a {
+    color: #636363;
+    outline: medium none;
+}
+.body div ul {
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.body div ul li:first-child {
+    background: none repeat scroll 0 0 transparent;
+}
+.body div ul li {
+    background: url("images/separator.jpg") no-repeat scroll center top transparent;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.body div ul li div.featured {
+    height: 292px;
+    margin: 0;
+    text-align: center;
+    width: 281px;
+}
+.body div ul li div.featured img {
+    border: 0 none;
+    margin: 10px 0 0 -3px;
+}
+.body div ul li div.featured ul {
+    margin: 2px 0 0 10px;
+    overflow: hidden;
+}
+.body div ul li div.featured ul li:first-child {
+    margin: 0;
+}
+.body div ul li div.featured ul li {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+.body div ul li div.featured ul li a {
+    padding: 0;
+}
+.body div ul li div.featured ul li a img {
+    margin: 0;
+}
+.body div ul li div.featured ul li a img:hover {
+    opacity: 0.8;
+}
+.body div ul li div.featured a {
+    clear: both;
+    color: #8A8889;
+    display: block;
+    font-family: 'RokkittRegular';
+    font-size: 13px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 5px 0 0;
+    text-decoration: none;
+    width: auto;
+}
+.body div div {
+    background: url("images/bg-content3.jpg") no-repeat scroll center top transparent !important;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px 54px !important;
+    width: 940px;
+}
+.body div div div:first-child {
+    padding: 65px 30px 0 0 !important;
+}
+.body div div div {
+    background: none repeat scroll 0 0 transparent !important;
+    float: left;
+    padding: 65px 0 0 30px !important;
+    width: 440px;
+}
+.body div div div h3 {
+    color: #305872;
+    font-family: 'RokkittRegular';
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0 1px 0 #D4EFFF;
+}
+.body div div div p {
+    color: #305872;
+    font-family: 'RokkittRegular';
+    font-size: 16px;
+    text-shadow: 0 1px 0 #D4EFFF;
+}
+.body div div div p a {
+    color: #305872;
+}
+.body div div ul.blog {
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 10px 5px;
+    width: 940px;
+}
+.body div div ul.blog li:first-child {
+    background: url("images/separator-horizontal.jpg") repeat-x scroll center bottom transparent;
+    margin: 0;
+    padding: 0;
+}
+.body div div ul.blog li {
+    float: left;
+    height: auto;
+    margin: 30px 0 0;
+    padding: 0;
+    width: auto;
+}
+.body div div ul.blog li div {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    height: auto;
+    margin: 0 0 0 50px;
+    padding: 8px 0 30px !important;
+    text-align: left;
+    width: 600px;
+}
+.body div div ul.blog li div a img {
+    border: 0 none;
+    margin: 0 0 0 -3px;
+}
+.body div div ul.blog li div a img:hover {
+    opacity: 0.8;
+}
+.body div div ul.blog li div h3 {
+    color: #EDEDE3;
+    font-size: 22px;
+    margin: 13px 0 0;
+    text-shadow: 0 1px 0 #9FBBD1;
+}
+.body div div ul.blog li div p {
+    background: none repeat scroll 0 0 transparent;
+    color: #345D79;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 17px 0 0;
+    padding: 0;
+    text-align: justify;
+    width: auto;
+}
+.body div div ul.blog li div p a {
+    color: #FFFFFF;
+}
+.body div div ul.blog li div a {
+    background: none repeat scroll 0 0 transparent;
+    color: #EDEDE3;
+    float: left;
+    font-size: 18px;
+    margin: 0;
+    text-shadow: 0 1px 0 #9BBBD4;
+}
+.body div div ul.blog li div a:hover {
+    color: #345D79 !important;
+}
+.body div div ul.blog li div a:first-child {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.body div div ul.blog li div a:hover {
+    color: #F78117;
+}
+.body div div ul.blog li div.featured {
+    background: url("images/interface.png") no-repeat scroll 0 -338px transparent !important;
+    float: left;
+    height: 294px;
+    margin: 0;
+    padding: 0 !important;
+    text-align: center;
+    width: 284px;
+}
+.body div div ul.blog li div.featured img {
+    margin: 8px 0 0 -3px;
+}
+.body div div ul.blog li div.featured ul {
+    margin: 5px 0 0 12px;
+}
+.body div div ul.blog li div.featured ul li:first-child {
+    margin: 0;
+}
+.body div div ul.blog li div.featured ul li {
+    height: auto;
+    margin: 0 0 0 18px;
+}
+.body div div ul.blog li div.featured ul li a {
+    display: block;
+    height: 74px;
+    margin: 0;
+    padding: 0;
+    width: 74px;
+}
+.body div div ul.blog li div.featured ul li a img {
+    margin: 0;
+}
+.body div div ul.blog li div.featured a {
+    color: #858585;
+    display: block;
+    float: none;
+    font-family: arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 auto;
+    outline: medium none;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FCFCFC;
+    width: 150px;
+}
+.body div ul#blog {
+    padding-bottom: 40px;
+}
+.body div ul#blog li a {
+    margin: -47px 0 0 80px;
+    position: absolute;
+}
+.body div ul#blog li h3 {
+    margin-top: 55px;
+}
+.body div div ul.paging {
+    background: url("images/separator-horizontal.jpg") repeat-x scroll center top transparent;
+    margin: 0 0 30px;
+    padding: 20px 0 0;
+    text-align: center;
+    width: 960px;
+}
+.body div div ul.paging li {
+    background: none repeat scroll 0 0 transparent !important;
+    display: inline;
+    padding: 0 5px;
+}
+.body div div ul.paging li a {
+    color: #F6F0E4;
+    font-family: arial;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #A2B9C1;
+}
+.body div div ul.paging li a:hover {
+    color: #3B7193;
+}
+.body div div div a#join {
+    background: url("images/interface.png") no-repeat scroll 0 -221px transparent;
+    color: #39657E;
+    display: block;
+    font-family: 'RokkittRegular';
+    font-size: 20px;
+    font-weight: bold;
+    height: 97px;
+    line-height: 57px;
+    margin: 20px 0 0 30px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #D7EAF8;
+    width: 388px;
+}
+.footer {
+    background: url("images/bg-footer.gif") repeat-x scroll left top transparent;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 45px 0 105px;
+    width: auto;
+}
+.footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 960px;
+}
+.footer div ul {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.footer div ul li {
+    margin: 0 0 5px;
+}
+.footer div ul li a:hover {
+    color: #6CB2E6;
+}
+.footer div ul li a {
+    color: #D5EBF8;
+    font-family: 'RokkittRegular';
+    font-size: 18px;
+    line-height: 35px;
+    outline: medium none;
+    text-decoration: none;
+}
+.footer div p {
+    color: #22323F;
+    float: left;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0 0 0 65px;
+    text-align: justify;
+    text-shadow: 0 1px 0 #99ABB9;
+    width: 555px;
+}
+.footer div p a {
+    color: #FFFFFF;
+}
+.footer div div.connect {
+    background: url("images/interface.gif") no-repeat scroll left -33px transparent;
+    float: left;
+    height: 150px;
+    margin: 0 0 0 50px;
+    width: auto;
+}
+.footer div div.connect a:hover {
+    color: #3D4F5B;
+}
+.footer div div.connect a {
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    margin: 10px 0 0 45px;
+    outline: medium none;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #546A77;
+    text-transform: capitalize;
+    width: auto;
+}
+.footer div div.connect a#facebook {
+    background: url("images/icons.gif") no-repeat scroll 0 -48px transparent;
+    display: block;
+    line-height: 25px;
+    margin-bottom: 25px;
+    padding: 0 0 0 80px;
+}
+.footer div div.connect a#twitter {
+    background: url("images/icons.gif") no-repeat scroll 0 -96px transparent;
+    display: block;
+    line-height: 25px;
+    padding: 0 0 0 90px;
+}
+.footer div div.connect a#vimeo {
+    background: url("images/icons.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    line-height: 25px;
+    margin-bottom: 25px;
+    padding: 0 0 0 90px;
+}
+.footer div p.footnote {
+    clear: both;
+    color: #3E505C;
+    float: none;
+    font-family: trebuchet MS;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+    padding: 30px 0 0;
+    text-align: center;
+    text-shadow: 0 1px 0 #99ABB9;
+    width: auto;
+}
+#search input {
+    float: left;
+    line-height: 38px;
+}
+#search form {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 4px 4px;
+}
+#search .txtfield {
+    border: 0 none;
+    color: #6E6E6E;
+    font-size: 15px;
+    font-style: italic;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    width: 234px;
+}
+#search .button {
+    background: url("images/spotlight.gif") no-repeat scroll right center #fff;
+    border: 0 none;
+    cursor: pointer;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}

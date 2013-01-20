@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Event sharing website</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+		  <ui:insert name="header">
+			<div>
+				<h1><a href="index.html" id="logo">Event sharing</a></h1>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="selected">
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+					</li>
+				</ul>
+			</div>
+			</ui:insert>
+		</div>
+		<div class="body">
+			<ui:insert name="content">
+			</ui:insert>
+		</div>
+		<div class="footer">
+			<ui:insert name="footer">
+			<div>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="services.html">Gallery</a>
+					</li>
+				</ul>
+				<p>This website template has been designed by Free Website Templates for you, for free. You can replace all
+					this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+					euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
+					exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure 
+					dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero 
+					eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+					nulla facilisi. Nam</p>
+				<div class="connect">
+					<a href="http://freewebsitetemplates.com/go/youtube/" id="vimeo">vimeo</a>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				</div>
+				<p class="footnote">&#169; Copyright &#169; 2011. Company name. All rights reserved</p>
+			</div>
+			</ui:insert>
+		</div>
+	</div>
+</body>
+</html>
