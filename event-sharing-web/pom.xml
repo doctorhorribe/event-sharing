@@ -27,7 +27,7 @@
   <dependencies>
 	<dependency>
 		<groupId>com.eventsharing</groupId>
-		<artifactId>eventsharing-service</artifactId>
+		<artifactId>event-sharing-service</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<classifier>client</classifier>
 	</dependency>  
