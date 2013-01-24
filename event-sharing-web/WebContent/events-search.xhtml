@@ -11,10 +11,10 @@
 					<div>
 						<h3>Search events</h3>
 						<p>Lorem ipsum</p>
-			       <form id="search" method="" action="">
-				        <input type="text" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}" class="txtfield" value="Search" />
-				        <input type="submit" class="button" value="" />
-			       </form>
+			       <h:form id="search">
+				        <h:inputText id="eventName" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}" styleClass="txtfield" value="#{eventSearchBean.filter.eventName}" />
+				        <h:commandButton actionListener="#{eventSearchBean.search}" styleClass="button" value="" />
+			       </h:form>
 					</div>
 					<div>
 						<h3>Lorem ipsum</h3>
