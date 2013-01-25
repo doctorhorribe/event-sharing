@@ -6,3 +6,5 @@
 *.ear
 *.exe
 */target/*
+*/build/*
+*/.settings/*
