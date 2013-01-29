@@ -14,22 +14,21 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.2</version>
-        <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
-          <failOnMissingWebXml>false</failOnMissingWebXml>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
   <dependencies>
+  	<dependency>
+		<groupId>org.jboss.spec</groupId>
+		<artifactId>jboss-javaee-6.0</artifactId>
+		<version>1.0.0.Final</version>
+		<type>pom</type>
+		<scope>provided</scope>
+	</dependency>
 	<dependency>
 		<groupId>com.eventsharing</groupId>
 		<artifactId>event-sharing-service</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<classifier>client</classifier>
-	</dependency>  
+	</dependency>
   </dependencies>
 </project>
