@@ -3,6 +3,7 @@
 	<name>event-sharing-web</name>
 	<comment></comment>
 	<projects>
+		<project>event-sharing-service</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
