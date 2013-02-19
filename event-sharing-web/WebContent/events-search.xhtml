@@ -12,9 +12,22 @@
 						<h3>Search events</h3>
 						<p>Lorem ipsum</p>
 			       <h:form id="search">
-				        <h:inputText id="eventName" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}" styleClass="txtfield" value="#{eventSearchBean.filter.eventName}" />
-				        <h:commandButton actionListener="#{eventSearchBean.search}" styleClass="button" value="" />
+				        <h:inputText
+				        	id="eventName" 
+				        	onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" 
+				        	onblur="javascript:if(this.value==''){this.value=this.defaultValue;}" 
+				        	styleClass="txtfield" 
+				        	value="#{eventsSearchBean.filter.eventName}"
+				        />
+				        <h:commandButton 
+				        	actionListener="#{eventsSearchBean.search}" 
+				        	styleClass="button" 
+				        	value=""
+				        />
 			       </h:form>
+			       <h:dataTable value="#{eventsSearchBean.results}" var="event">
+			       		<h:column>#{event.name}</h:column>
+			       </h:dataTable>
 					</div>
 					<div>
 						<h3>Lorem ipsum</h3>
