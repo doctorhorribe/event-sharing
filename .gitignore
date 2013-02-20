@@ -1,5 +1,4 @@
 *.class
-
 # Package Files #
 *.jar
 *.war
@@ -9,4 +8,5 @@
 */build/*
 */.settings*
 */.project*
-*/.classpath
+*/.classpath*/event-sharing-web/bin/*
+*/event-sharing-service/bin/*
