@@ -8,5 +8,4 @@
 */build/*
 */.settings*
 */.project*
-*/.classpath*/event-sharing-web/bin/*
-*/event-sharing-service/bin/*
+*/bin*
