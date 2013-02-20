@@ -7,4 +7,6 @@
 *.exe
 */target/*
 */build/*
-*/.settings/*
+*/.settings*
+*/.project*
+*/.classpath
