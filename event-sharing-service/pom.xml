@@ -7,7 +7,7 @@
 	<groupId>com.eventsharing</groupId>
 	<artifactId>event-sharing-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>ejb</packaging>
+	<packaging>jar</packaging>
 
 	<build>
 		<plugins>
