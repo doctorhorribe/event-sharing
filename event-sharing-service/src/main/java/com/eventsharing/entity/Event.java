@@ -10,7 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@Entity @Table(name="event")
+@Entity @Table(name="EVENT")
 public class Event {
 
 	@Id
